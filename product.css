@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: poppins;
+    color:black;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display :flex;
+    background-color:white;   
+    flex-flow: wrap;
+}
+
+.left {
+    flex:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+
+    
+}
+
+.left .pic {
+    width:75%;   
+    flex:25%;
+ 
+    
+  
+}
+
+.pic img {
+    height:100%;
+    width:100%;
+
+}
+.left .header {
+
+    flex:75%;
+
+}
+
+.header .price {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef3a36;
+    width:30%;
+    height:3rem;
+    margin-top:2rem;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    color:white;
+    font-size:larger;
+    margin-bottom: 1rem;
+  
+}
+
+.right {
+    flex:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.feat {
+    color: rgb(66, 66, 66);
+}
+
+
+
+
+.feat h3{
+    margin-bottom: 1rem;
+}
+
+.feat li{
+    list-style-type: disc;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    height:3rem;
+    margin-top: 3rem;
+ 
+}
+.cart {
+    width: 30%;
+    border-radius: 1rem;
+    background-color:#009dff;
+    border:none;
+    color:white;
+    font-size:larger;
+ 
+}
+
+.buy {
+    width: 30%;
+    border-radius: 1rem;
+    background-color:#00FF00 ;
+    border:none;
+    color:white;
+    font-size:larger;
+  
+}
+
+.cart:hover{
+    background-color: #187bcf;
+}
+
+.buy:hover{
+    background-color: #14d415;
+}
+
+
+@media (max-width: 800px) {
+    .right, .left {
+      flex: 100%;
+    }
+  
+
+    .left h1 {
+        flex:50%
+
+    }
+    .left img {
+        flex:50%;
+       
+    }
+    .pic {
+      
+    }
+
+  }
